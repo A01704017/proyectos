@@ -9,6 +9,6 @@ Me decidí por el idioma alemán porque es considerado un tanto complejo, así q
 Mi programa estará dividido en 5 secciones, las cuales contarán con diferentes métodos de aprendizaje como preguntas de opción múltiple y escritura. Este programa se encargará de brindar al usuario conocimientos básicos para poder comprender las bases del idioma y sobrevivir en una visita a alemania sin ningún problema. Las secciones serán las siguientes:
 - los números
 - cómo presentarse
-- articulos: der die das 
+- artículos: der die das 
 - conjugación de verbos regulares
 - frases útiles 
