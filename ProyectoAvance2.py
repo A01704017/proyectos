@@ -2,7 +2,7 @@
 Programa para el aprendizaje del idioma Alemán
 En este programa implemente el uso de variables, tipos y operadores."""
 
-#Este es el quiz de numeros donde se evaluaran los conocimientos. 
+#Este es el quiz de numeros donde se evaluaran los conocimientos. Agergare más preguntas.
 def quiznum():
     #Este contador contara las respuestas correctas del usuario. Para esto utilice operadores. 
     count = 0
