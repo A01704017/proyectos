@@ -1,4 +1,4 @@
-""" Avance 2 del Proyecto
+""" Avance 2 del Proyecto holaaa
 Programa para el aprendizaje del idioma Alemán
 En este programa implemente el uso de variables, tipos y operadores."""
 
