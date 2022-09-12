@@ -67,19 +67,38 @@ def practica_articulos():
     
     puntaje_total = calculadora(count)
     print("Puntaje total:",puntaje_total)
-    actividad = str(input("Para el menú principal teclea 'm´: "))
-    if actividad == "m":
-        menu_principal = main()
-
+    
+    menu_opciones = str(input("Si deseas volver a la sección anterior teclea ´si´.Para el menú principal teclea 'm´: "))
+    while menu_opciones != "si" or menu_opciones != "m":
+        if menu_opciones == "si":
+            articulos_seccion = articulos()
+        elif menu_opciones == "m":
+            menu_principal = main()
+        else:
+            print("Ingresa opción valida")
+            menu_opciones = str(input("Si deseas volver a la sección anterior teclea ´si´.Para el menú principal teclea 'm´: "))
+        break
+    
 """Esta función se encarga de mostrar la información sobre los articulos en alemán.
 Tambén dirige con un condicional al usuario hacia la practica o devuelta la menú."""
 def articulos():
-    print("Información")
-    actividad = str(input("Si deseas ir a la practica teclea ´si´.Para el menú principal teclea 'm´: "))
-    if actividad == "si":
-        articulos_actividad = practica_articulos()
-    elif actividad == "m":
-        menu_principal = main()
+    print("\nSe utiliza der para:")
+    print("1.Al referirse al género masculino \n2.Con años, semanas y estaciones del año \n3.Sustantivos que terminan en -er, -ant, -ner")
+    print("\nSe utiliza die para:")
+    print("1.Referirse al género femenino \n2.Sustantivos que terminan en heit, keit, schaft, ung, ade, age, anz, nz, ik, ion, tät, ur, -e , ei, ie y in")
+    print("\nSe utiliza das para:")
+    print("1.Sustantivos terminan en -chen, -um, -ment, -nis \n2.Colores \n3.Sustantivos que se derivan de infinitivos")
+    
+    menu_opciones = str(input("\nSi deseas ir a la practica teclea ´si´.Para el menú principal teclea 'm´: "))
+    while menu_opciones != "si" or menu_opciones != "m":
+        if menu_opciones == "si":
+            articulos_actividad = practica_articulos()
+        elif menu_opciones == "m":
+            menu_principal = main()
+        else:
+            print("Ingresa opción valida")
+            menu_opciones = str(input("\nSi deseas ir a la practica teclea ´si´.Para el menú principal teclea 'm´: "))
+        break
     
 """Esta función contiene un quiz con ejercicios para practicar los numeros.
 Utiliza condicionales y operadores para sumar los puntos obtenidos en el quiz y después
@@ -120,20 +139,39 @@ def quiznum():
     puntaje_total = calculadora(count)
     print("Puntaje total:", puntaje_total)
     
-    actividad = str(input("Para el menú principal teclea 'm´: "))
-    if actividad == "m":
-        menu_principal = main()
+    menu_opciones = str(input("Si deseas volver a la sección anterior teclea ´si´.Para el menú principal teclea 'm´: "))
+    while menu_opciones != "si" or menu_opciones != "m":
+        if menu_opciones == "si":
+            numeros_seccion = numeros()
+        elif menu_opciones == "m":
+            menu_principal = main()
+        else:
+            print("Ingresa opción valida")
+            menu_opciones = str(input("Si deseas volver a la sección anterior teclea ´si´.Para el menú principal teclea 'm´: "))
+        break
 
 """Esta función se encarga de mostrar la información sobre los numeros en alemán.
 Tambén dirige con un condicional al usuario hacia la practica o devuelta la menú."""
 def numeros():
-    print("Información")
-    actividad = str(input("Si deseas ir a la practica teclea ´si´.Para el menú principal teclea 'm´: "))
-    if actividad == "si":
-        articulos_actividad = quiznum()
-    elif actividad == "m":
-        menu_principal = main()
+    print("\nAprendamos a contar en Alemán del 1 - 100. \nPrimero memoriza los numeros del 1 - 9.")
+    print("neins - 1, zwei - 2, drei - 3, vier - 4, fünf - 5, sechs - 6, sieben - 7, acht - 8, neun - 9")
+    print("\nAhora contemos de 10 en 10.")
+    print("zehn - 10, zwanzig - 20, dreißig - 30, vierzig - 40, fünfzig - 50, sechzig - 60, siebzig - 70, \nachtzig - 80, neunzig - 90, einhundert/hundert - 100")
+    print("\nPor último aprenderemos a contar los numeros de dos digitos, para cada decena se sigue la misma regla.")
+    print("Sin embargo, es importante recordar que los siguientes numeros no siguen la regla: elf - 11, zwölf - 12")
+    print("\nContemos del 21 - 29, dónde primero mencionaremos la unidad y después la decena.")
+    print("einundzwanzig - 21, zweiundzwanzig - 22, dreiundzwanzig - 23, vierundzwanzig - 24, fünfundzwanzig - 25 \nsechsundzwanzig - 26, siebenundzwanzig - 27, achtundzwanzig - 28, neunundzwanzig - 29")
     
+    menu_opciones = str(input("\nSi deseas ir a la practica teclea ´si´.Para el menú principal teclea 'm´: "))
+    while menu_opciones != "si" or menu_opciones != "m":
+        if menu_opciones == "si":
+            numeros_actividad = quiznum()
+        elif menu_opciones == "m":
+            menu_principal = main()
+        else:
+            print("Ingresa opción valida")
+            menu_opciones = str(input("\nSi deseas ir a la practica teclea ´si´.Para el menú principal teclea 'm´: "))
+        break
             
 """Esta función se encarga de calcular el promedio en las actividades de practica
 y quizes utilizando operadores."""
