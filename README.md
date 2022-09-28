@@ -10,5 +10,5 @@ Mi programa estará dividido en 5 secciones, las cuales después de explicacione
 - los números
 - cómo presentarse
 - artículos: der die das 
-- conjugación de verbos regulares
+- conjugación de verbos 
 - frases útiles 
